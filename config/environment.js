@@ -9,8 +9,15 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
       // 'font-src': "'self' data: fonts.gstatic.com",
       // 'style-src': "'self' 'unsafe-inline' fonts.googleapis.com",
-      'connect-src': "'self' localhost:8888",
-      'connect-src': "'self' http://api.txgarage.com",
+      'connect-src': "\'self\' localhost:8888",
+      // 'connect-src': "'self' http://api.txgarage.com",
+      'default-src': '\'self\'',
+      'script-src': '\'self\' \'unsafe-eval\' \'unsafe-inline\' http://*.typekit.net',
+      'font-src': '\'self\' data:',
+      // 'connect-src': '\'self\' http://ka3dev.dialexa.com',
+      'img-src': '\'self\' data:',
+      'style-src': '\'self\' \'unsafe-inline\' http://*.typekit.net',
+      'media-src': '\'self\''
     },
     EmberENV: {
       FEATURES: {

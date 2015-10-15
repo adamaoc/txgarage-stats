@@ -4,5 +4,6 @@ export default DS.Model.extend({
   name: DS.attr('string'),
   startDate: DS.attr('string'),
   endDate: DS.attr('string'),
-  slug: DS.attr('string')
+  slug: DS.attr('string'),
+  totals: DS.attr('number')
 });

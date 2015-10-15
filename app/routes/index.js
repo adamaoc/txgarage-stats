@@ -6,7 +6,7 @@ export default Ember.Route.extend({
     return Ember.RSVP.hash({
       stats: store.find('stat'),
       campaigns: store.find('campaign'),
-      clicks: store.find('click')
+      // clicks: store.find('click')
     });
   },
   setupController: function(controller, models) {
