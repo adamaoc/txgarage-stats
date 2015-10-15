@@ -1,0 +1,20 @@
+<div class="title-wrap">
+  <h2>Campaigns</h2>
+</div>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Totals</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+  </tr>
+{{#each campaigns as |campaign|}}
+  <tr>
+    <td>{{#link-to 'campaign' campaign.id}}{{campaign.name}}{{/link-to}}</td>
+    <td>{{campaign.totals}}</td>
+    <td>{{campaign.startDate}}</td>
+    <td>{{campaign.endDate}}</td>
+  </tr>
+{{/each}}
+</table>
