@@ -3,18 +3,15 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   classNames: ['stat-widget'],
   classNameBindings: ['color'],
-  
+
   title: Ember.computed('data', function() {
     return this.get('data.title');
   }),
-  time: Ember.computed('data', function() {
-    return this.get('data.time');
+  slug: Ember.computed('data', function() {
+    return this.get('data.slug');
   }),
   stat: Ember.computed('data', function() {
-    return this.get('data.stat');
-  }),
-  footer: Ember.computed('data', function() {
-    return this.get('data.footer');
+    return this.get('data.stat').toLocaleString();
   }),
   color: Ember.computed('data', function() {
     let color = this.get('data.color');
