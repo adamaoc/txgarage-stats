@@ -142,10 +142,40 @@ body > div {
 
 .title-wrap {
   background: #d9d9d9;
-  padding: 1em; }
+  padding: 1em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-around;}
   .title-wrap h2 {
     margin: 0;
     color: #a6a6a6; }
+
+  .header-stats {
+    padding-left: 2em;
+    flex: 1 auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .header-stats__block {
+    padding: 0 1em;
+    text-align: center;
+  }
+  .header-stats label {
+    font-size: 0.75em;
+    text-transform: uppercase;
+  }
+  .header-stats h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
 
 .dashboard-stats {
   padding: 1em;
