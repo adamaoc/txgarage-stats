@@ -1,0 +1,61 @@
+.dashboard-stats
+  padding: 1em
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: nowrap
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  @include bp(sm)
+    flex-direction: row
+
+.stat-widget
+  margin: 1em
+  background: #dfdfdf
+  border: 1px solid #d2d2d2
+  border-radius: 3px
+  min-width: 203px
+  max-width: 350px
+  -webkit-flex: 25% 0
+  -ms-flex: 25% 0
+  flex: 25% 0
+  flex-wrap: wrap
+
+
+.stat-widget a
+  overflow: hidden
+  display: flex
+  color: white
+  justify-content: space-between
+  text-decoration: none
+  align-items: center
+
+
+.stat-widget .widget-logo
+  padding: 0.5rem 1rem
+  display: block
+
+.stat-widget .widget-stat
+  padding: 0.5rem 1rem
+  text-align: center
+  font-size: 2em
+  display: block
+
+.stat-widget--green
+  background: #69CC95
+  color: #fff
+.stat-widget--green .widget-logo
+  background: #87d6ab
+.stat-widget--blue
+  background: #1E537B
+  color: #fff
+.stat-widget--blue .widget-logo
+  background: #26699c
+.stat-widget--light-blue
+  background: #2d7cb9
+  color: #fff
+.stat-widget--light-blue .widget-logo
+  background: #3e91d0

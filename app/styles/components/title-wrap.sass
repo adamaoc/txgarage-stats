@@ -1,0 +1,52 @@
+.title-wrap
+  background: #d9d9d9
+  padding: 1em
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  // justify-content: space-around
+  &--mid
+    max-width: 750px
+    margin: 0 auto
+
+.title-wrap h2
+  margin: 0
+  color: #a6a6a6
+  text-align: center
+  width: 100%
+
+  @include bp(sm)
+    text-align: left
+    width: auto
+
+.header-stats
+  padding-left: 0
+  flex: 1 auto
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-flex-wrap: wrap
+  -ms-flex-wrap: wrap
+  flex-wrap: nowrap
+  justify-content: center
+
+  @include bp(sm)
+    padding-left: 2em
+
+.header-stats__block
+  padding: 0 0.5em
+  text-align: center
+
+  @include bp(sm)
+    padding: 0 1em
+
+.header-stats label
+  font-size: 0.75em
+  text-transform: uppercase
+
+.header-stats h3
+  font-size: 1.1rem
+  font-weight: 400

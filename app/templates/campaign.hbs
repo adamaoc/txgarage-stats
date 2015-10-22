@@ -15,3 +15,21 @@
     </div>
   </div>
 </div>
+
+<div class="contents">
+  <div class="title-wrap title-wrap--mid">
+    <h2>Clicks</h2>
+  </div>
+  <table class="stat-table">
+    <tr class="table-head">
+      <th>Date Clicked</th>
+      <th>Page Clicked</th>
+    </tr>
+    {{#each clicks as |click|}}
+      <tr>
+        <td>{{click.datetime}}</td>
+        <td class="long-td">{{click.page}}</td>
+      </tr>
+    {{/each}}
+  </table>
+</div>
