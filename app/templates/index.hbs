@@ -10,8 +10,18 @@
 </div>
 
 <div class="dashboard-block dashboard-block--wrapper">
-  {{newsletter-stat title="txGarage Newsletter" stat="84" statDeet="Subscribers"}}
-  {{newsletter-stat title="txGarage Newsletter" stat="2" statDeet="Monthly Sent"}}
+  {{#each newsletters as |newsletter|}}
+    {{newsletter-stat title="txGarage Newsletter" stat=newsletter.stat statDeet=newsletter.name}}
+  {{/each}}
+</div>
+
+<div class="title-wrap title-wrap--mid">
+  <h2>Monthly Views</h2>
+</div>
+<div class="dashboard-block dashboard-block--wrapper">
+  {{#if chartData}}
+    {{ember-chart type='Bar' data=chartData width='700' height='200' }}
+  {{/if}}
 </div>
 
 <div class="dashboard-block">
